@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+  package="com.raywenderlich.android.promoapp">
+
+  <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+  <uses-permission android:name="android.permission.INTERNET" />
+  <uses-permission android:name="com.google.android.gms.permission.AD_ID"/>
+
+  <application
+      android:allowBackup="true"
+      android:name="com.raywenderlich.android.promoapp.ui.CustomApplicationClass"
+      android:icon="@mipmap/ic_launcher"
+      android:label="PromoApp"
+      android:supportsRtl="true"
+
+      android:theme="@style/AppTheme">
+
+    <activity
+        android:name="com.raywenderlich.android.promoapp.ui.LauncherActivity"
+        android:exported="true"
+        android:label="promoapp">
+
+
+      <intent-filter>
+        <action android:name="android.intent.action.MAIN" />
+        <category android:name="android.intent.category.LAUNCHER" />
+      </intent-filter>
+
+      <intent-filter android:label="@string/text_deep_link_title">
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data
+            android:scheme="https"
+            android:host="android"
+            android:pathPrefix="/deeplink"/>
+      </intent-filter>
+
+      <!-- Branch URI Scheme -->
+      <intent-filter>
+        <data android:scheme="promoapp" android:host="open" />
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+      </intent-filter>
+
+      <!-- Branch App Links -->
+      <intent-filter android:autoVerify="true">
+        <action android:name="android.intent.action.VIEW" />
+        <category android:name="android.intent.category.DEFAULT" />
+        <category android:name="android.intent.category.BROWSABLE" />
+        <data android:scheme="https" android:host="bullseye.app.link" />
+        <data android:scheme="https" android:host="bullseye-alternate.app.link" />
+        <data android:scheme="https" android:host="bullseye.test-app.link" />
+        <data android:scheme="https" android:host="bullseye-alternate.test-app.link" />
+      </intent-filter>
+    </activity>
+
+
+    <!-- Branch init -->
+    <meta-data android:name="io.branch.sdk.BranchKey" android:value="key_live_oa3QkbfJR0pEzLq7w6kg3piazDccSD8Z" />
+    <meta-data android:name="io.branch.sdk.BranchKey.test" android:value="key_test_dl1QjpcTJ0euwOvYrYvb4gjjBCbkNRkd" />
+    <meta-data android:name="io.branch.sdk.TestMode" android:value="false" />
+
+  </application>
+
+</manifest>
