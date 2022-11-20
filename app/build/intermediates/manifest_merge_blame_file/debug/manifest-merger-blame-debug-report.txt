@@ -1,0 +1,177 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.raywenderlich.android.promoapp"
+4    android:versionCode="1"
+5    android:versionName="1.0" >
+6
+7    <uses-sdk
+8        android:minSdkVersion="21"
+8-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml
+9        android:targetSdkVersion="32" />
+9-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml
+10
+11    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+11-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:5:3-77
+11-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:5:20-74
+12    <uses-permission android:name="android.permission.INTERNET" />
+12-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:6:3-65
+12-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:6:20-62
+13    <uses-permission android:name="com.google.android.gms.permission.AD_ID" />
+13-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:7:3-76
+13-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:7:20-74
+14    <uses-permission android:name="com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE" />
+14-->[com.android.installreferrer:installreferrer:2.1] /Users/eric.adamian/.gradle/caches/transforms-2/files-2.1/aaa00062b1b418a971f1f047dfe54417/jetified-installreferrer-2.1/AndroidManifest.xml:9:5-110
+14-->[com.android.installreferrer:installreferrer:2.1] /Users/eric.adamian/.gradle/caches/transforms-2/files-2.1/aaa00062b1b418a971f1f047dfe54417/jetified-installreferrer-2.1/AndroidManifest.xml:9:22-107
+15
+16    <application
+16-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:9:3-65:17
+17        android:name="com.raywenderlich.android.promoapp.ui.CustomApplicationClass"
+17-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:11:7-82
+18        android:allowBackup="true"
+18-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:10:7-33
+19        android:appComponentFactory="androidx.core.app.CoreComponentFactory"
+19-->[androidx.core:core:1.5.0-alpha02] /Users/eric.adamian/.gradle/caches/transforms-2/files-2.1/1e9e642800c09bc0b0a7700985fe1526/core-1.5.0-alpha02/AndroidManifest.xml:24:18-86
+20        android:debuggable="true"
+21        android:icon="@mipmap/ic_launcher"
+21-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:12:7-41
+22        android:label="PromoApp"
+22-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:13:7-31
+23        android:supportsRtl="true"
+23-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:14:7-33
+24        android:testOnly="true"
+25        android:theme="@style/AppTheme" >
+25-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:16:7-38
+26        <activity
+26-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:18:5-57:16
+27            android:name="com.raywenderlich.android.promoapp.ui.LauncherActivity"
+27-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:19:9-78
+28            android:exported="true"
+28-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:20:9-32
+29            android:label="promoapp" >
+29-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:21:9-33
+30            <intent-filter>
+30-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:24:7-27:23
+31                <action android:name="android.intent.action.MAIN" />
+31-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:25:9-61
+31-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:25:17-58
+32
+33                <category android:name="android.intent.category.LAUNCHER" />
+33-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:26:9-69
+33-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:26:19-66
+34            </intent-filter>
+35            <intent-filter android:label="@string/text_deep_link_title" >
+35-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:29:7-37:23
+35-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:29:22-66
+36                <action android:name="android.intent.action.VIEW" />
+36-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:30:9-61
+36-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:30:17-58
+37
+38                <category android:name="android.intent.category.DEFAULT" />
+38-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:31:9-68
+38-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:31:19-65
+39                <category android:name="android.intent.category.BROWSABLE" />
+39-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:32:9-70
+39-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:32:19-67
+40
+41                <data
+41-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:33:9-36:45
+42                    android:host="android"
+42-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:35:13-35
+43                    android:pathPrefix="/deeplink"
+43-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:36:13-43
+44                    android:scheme="https" />
+44-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:34:13-35
+45            </intent-filter>
+46
+47            <!-- Branch URI Scheme -->
+48            <intent-filter>
+48-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:40:7-45:23
+49                <data
+49-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:33:9-36:45
+50                    android:host="open"
+50-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:35:13-35
+51                    android:scheme="promoapp" />
+51-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:34:13-35
+52
+53                <action android:name="android.intent.action.VIEW" />
+53-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:30:9-61
+53-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:30:17-58
+54
+55                <category android:name="android.intent.category.DEFAULT" />
+55-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:31:9-68
+55-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:31:19-65
+56                <category android:name="android.intent.category.BROWSABLE" />
+56-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:32:9-70
+56-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:32:19-67
+57            </intent-filter>
+58
+59            <!-- Branch App Links -->
+60            <intent-filter android:autoVerify="true" >
+60-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:48:7-56:23
+60-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:48:22-47
+61                <action android:name="android.intent.action.VIEW" />
+61-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:30:9-61
+61-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:30:17-58
+62
+63                <category android:name="android.intent.category.DEFAULT" />
+63-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:31:9-68
+63-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:31:19-65
+64                <category android:name="android.intent.category.BROWSABLE" />
+64-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:32:9-70
+64-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:32:19-67
+65
+66                <data
+66-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:33:9-36:45
+67                    android:host="bullseye.app.link"
+67-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:35:13-35
+68                    android:scheme="https" />
+68-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:34:13-35
+69                <data
+69-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:33:9-36:45
+70                    android:host="bullseye-alternate.app.link"
+70-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:35:13-35
+71                    android:scheme="https" />
+71-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:34:13-35
+72                <data
+72-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:33:9-36:45
+73                    android:host="bullseye.test-app.link"
+73-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:35:13-35
+74                    android:scheme="https" />
+74-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:34:13-35
+75                <data
+75-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:33:9-36:45
+76                    android:host="bullseye-alternate.test-app.link"
+76-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:35:13-35
+77                    android:scheme="https" />
+77-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:34:13-35
+78            </intent-filter>
+79        </activity>
+80
+81        <!-- Branch init -->
+82        <meta-data
+82-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:61:5-115
+83            android:name="io.branch.sdk.BranchKey"
+83-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:61:16-54
+84            android:value="key_live_oa3QkbfJR0pEzLq7w6kg3piazDccSD8Z" />
+84-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:61:55-112
+85        <meta-data
+85-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:62:5-120
+86            android:name="io.branch.sdk.BranchKey.test"
+86-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:62:16-59
+87            android:value="key_test_dl1QjpcTJ0euwOvYrYvb4gjjBCbkNRkd" />
+87-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:62:60-117
+88        <meta-data
+88-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:63:5-78
+89            android:name="io.branch.sdk.TestMode"
+89-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:63:16-53
+90            android:value="false" />
+90-->/Users/eric.adamian/Desktop/PromoAppStarter/app/src/main/AndroidManifest.xml:63:54-75
+91        <meta-data
+91-->[com.google.android.gms:play-services-basement:17.0.0] /Users/eric.adamian/.gradle/caches/transforms-2/files-2.1/4b1d64d4315d2f08db6b694ed4bebdb1/jetified-play-services-basement-17.0.0/AndroidManifest.xml:23:9-25:69
+92            android:name="com.google.android.gms.version"
+92-->[com.google.android.gms:play-services-basement:17.0.0] /Users/eric.adamian/.gradle/caches/transforms-2/files-2.1/4b1d64d4315d2f08db6b694ed4bebdb1/jetified-play-services-basement-17.0.0/AndroidManifest.xml:24:13-58
+93            android:value="@integer/google_play_services_version" />
+93-->[com.google.android.gms:play-services-basement:17.0.0] /Users/eric.adamian/.gradle/caches/transforms-2/files-2.1/4b1d64d4315d2f08db6b694ed4bebdb1/jetified-play-services-basement-17.0.0/AndroidManifest.xml:25:13-66
+94    </application>
+95
+96</manifest>
